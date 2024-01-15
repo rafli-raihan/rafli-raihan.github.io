@@ -11,13 +11,13 @@ html, body {
 
 nav a{
   color: #fff;
-  transition: transform .2s;
+  transition: transform 500ms;
 }
 
 nav a:hover{
   text-decoration: none;
   color: var(--pico-primary-hover);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 #hero_home{
@@ -59,7 +59,6 @@ nav a:hover{
   padding-top: 3%;
 }
 
-
 .about_isi{
   text-justify: distribute;
 }
@@ -70,6 +69,24 @@ nav a:hover{
 
 #fb{
   font-size: 45px;
+}
+
+
+#content_grid{
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.thumb_grid img{
+  border-radius: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  transition: 500ms;
+}
+
+.thumb_grid img:hover{
+  transform: scale(1.03);
 }
 
 /* Komponen */
