@@ -1,6 +1,8 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .nav_home{
@@ -40,12 +42,6 @@ nav a:hover{
   height: 12%;
 }
 
-.sosmed{
-    justify-content: center;
-    align-content: space-evenly;
-    font-size: 50px;
-}
-
 .profile_pic{
   border-radius: 15px;
   transition: 500ms;
@@ -61,14 +57,6 @@ nav a:hover{
 
 .about_isi{
   text-justify: distribute;
-}
-
-#h5_sosmed{
-  text-align: center;
-}
-
-#fb{
-  font-size: 45px;
 }
 
 
@@ -88,6 +76,31 @@ nav a:hover{
 .thumb_grid img:hover{
   transform: scale(1.03);
 }
+
+.experience{
+  padding-top: 15%;
+  padding-bottom: 8%;
+}
+
+.experience_content{
+  padding-top: 8%;
+}
+
+footer{
+  text-align: center;
+  padding-top:10%;
+}
+
+.sosmed{
+  justify-content: center;
+  align-content: space-evenly;
+  font-size: 30px;
+}
+
+#footer_txt{
+  font-size: 12px;
+}
+
 
 /* Komponen */
 
