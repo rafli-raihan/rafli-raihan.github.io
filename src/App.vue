@@ -57,7 +57,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </svg>
       </a>
     </nav>
-    <p>Rafli Raihan | 2024</p>
+    <p>Rafli Raihan | 2025</p>
   </footer>
 </template>
 
