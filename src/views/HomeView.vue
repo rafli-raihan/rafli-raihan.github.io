@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main class="grid container" id="about_main">
+  <main>
     <img src="../assets/img/profile_pic_bw.png" alt="Profile Picture" class="profile_pic" />
     <div class="about_container">
       <h2>Hi! I'm Rafli,</h2>
@@ -24,17 +24,21 @@ main {
   display: block;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   main {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 
 .profile_pic {
-  margin: 3%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 2% auto auto auto;
   border-radius: 15px;
   transition: 500ms;
 }
@@ -44,6 +48,8 @@ main {
 }
 
 .about_container {
+  display: block;
+  place-items: center;
   padding: 3%;
 }
 
