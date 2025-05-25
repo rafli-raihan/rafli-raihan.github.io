@@ -1,21 +1,19 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import { useIsOnRoot } from './composables/useIsOnRoot'
+import Navbar from './components/Navbar.vue'
+
+const isRoot: boolean = useIsOnRoot().value
 </script>
 
 <template>
-  <header>
-    <div>
-      <h1>Rafli Raihan's</h1>
-    </div>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">Portfolio</RouterLink>
-    </nav>
+  <header v-show="!isRoot">
+    <Navbar />
   </header>
 
-  <div class="content">
+  <main>
     <RouterView />
-  </div>
+  </main>
 
   <footer>
     <nav>
@@ -68,16 +66,6 @@ header {
   align-items: center;
   justify-content: space-between;
   height: min-content;
-}
-
-.navbar > div {
-  height: max-content;
-  margin-right: auto;
-}
-
-.navbar > nav {
-  height: max-content;
-  justify-content: space-evenly;
 }
 
 main {
