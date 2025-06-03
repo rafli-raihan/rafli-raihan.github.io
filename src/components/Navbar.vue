@@ -2,7 +2,7 @@
 import { useIsOnRoot } from '@/composables/useIsOnRoot'
 import { RouterLink } from 'vue-router'
 
-const isRoot: boolean = useIsOnRoot().value
+const isRoot = useIsOnRoot()
 </script>
 
 <template>
@@ -10,10 +10,14 @@ const isRoot: boolean = useIsOnRoot().value
     <h1>Rafli Raihan's</h1>
     <p v-show="isRoot">hello, welcome to my page</p>
   </div>
-  <nav>
+  <div>
     <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">Portfolio</RouterLink>
-  </nav>
+    <RouterLink to="/about">About Me</RouterLink>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+p {
+  padding-left: 2px;
+}
+</style>
