@@ -16,8 +16,4 @@ const isRoot: boolean = useIsOnRoot().value
   </nav>
 </template>
 
-<style scoped>
-div {
-  display: block;
-}
-</style>
+<style scoped></style>

@@ -3,7 +3,7 @@ import { RouterView } from 'vue-router'
 import { useIsOnRoot } from './composables/useIsOnRoot'
 import Navbar from './components/Navbar.vue'
 
-const isRoot: boolean = useIsOnRoot().value
+const isRoot = useIsOnRoot()
 </script>
 
 <template>
