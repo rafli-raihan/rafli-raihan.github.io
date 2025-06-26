@@ -15,7 +15,7 @@ const isRoot = useIsOnRoot()
     <RouterView />
   </main>
 
-  <footer>
+  <footer v-show="!isRoot">
     <nav>
       <a href="https://www.facebook.com/fli.raihan/">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
