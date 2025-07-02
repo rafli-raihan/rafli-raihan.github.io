@@ -11,7 +11,7 @@ const isRoot = useIsOnRoot()
     <Navbar />
   </header>
 
-  <main>
+  <main :class="{ 'home-background': isRoot }">
     <RouterView />
   </main>
 
@@ -94,5 +94,30 @@ footer > nav {
 footer > p {
   margin: auto;
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  .home-background {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .home-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url('src/assets/img/home_background.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    transition: filter 0.3s;
+  }
+  @media (prefers-color-scheme: light) {
+    .home-background::before {
+      filter: invert(1);
+    }
+  }
 }
 </style>
