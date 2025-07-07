@@ -107,7 +107,7 @@ footer > p {
     position: absolute;
     inset: 0;
     z-index: -1;
-    background-image: url('src/assets/img/home_background.png');
+    background-image: url('src/assets/img/home_bg.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
