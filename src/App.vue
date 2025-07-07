@@ -1,21 +1,20 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
-import { useIsOnRoot } from './composables/useIsOnRoot'
+import { RouterView, useRoute } from 'vue-router'
 import Navbar from './components/Navbar.vue'
 
-const isRoot = useIsOnRoot()
+const route = useRoute()
 </script>
 
 <template>
-  <header v-show="!isRoot">
+  <header v-show="route.path !== '/'">
     <Navbar />
   </header>
 
-  <main :class="{ 'home-background': isRoot }">
+  <main :class="{ 'home-background': route.path == '/' }">
     <RouterView />
   </main>
 
-  <footer v-show="!isRoot">
+  <footer v-show="route.path !== '/'">
     <nav>
       <a href="https://www.facebook.com/fli.raihan/">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
