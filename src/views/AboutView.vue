@@ -3,7 +3,11 @@
 <template>
   <main>
     <div class="summary">
-      <img src="../assets/img/profile_pic_bw.png" alt="Profile Picture" class="profile_pic" />
+      <img
+        src="https://avatars.githubusercontent.com/u/115336466?v=4"
+        alt="Profile Picture"
+        class="profile_pic"
+      />
       <div class="about_container">
         <h1>Hi! I'm Rafli,</h1>
         <p>
@@ -81,17 +85,18 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch; /* Make children (img and about_container) the same height */
+    align-items: stretch;
     max-width: 1200px;
   }
 }
 
 .profile_pic {
   display: flex;
+  box-shadow: 0 0 10px rgba(26, 25, 25, 0.699);
   justify-content: center;
   align-self: center;
   margin: 2% auto auto auto;
-  border-radius: 15px;
+  border-radius: 25%;
   transition: 500ms;
   max-height: 100%;
   max-width: 100%;

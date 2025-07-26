@@ -77,14 +77,18 @@ main {
 footer {
   position: relative;
   width: 100%;
-  display: block;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
+  background-color: var(--color-background-mute);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.1);
 }
 
 footer > nav {
   display: flex;
-  margin: 2% auto 3% auto;
+  margin: auto auto 10px auto;
   align-items: center;
   justify-content: space-evenly;
   max-width: 450px;
@@ -93,6 +97,7 @@ footer > nav {
 footer > p {
   margin: auto;
   text-align: center;
+  font-size: small;
 }
 
 @media (min-width: 700px) {
@@ -113,6 +118,12 @@ footer > p {
     pointer-events: none;
     transition: filter 0.3s;
   }
+
+  footer {
+    margin: 50px auto 0 auto;
+    width: 50%;
+  }
+
   @media (prefers-color-scheme: light) {
     .home-background::before {
       filter: invert(1);
