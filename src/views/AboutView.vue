@@ -27,7 +27,7 @@
     <h2>Experiences</h2>
     <div class="experience_content">
       <details open>
-        <summary>Computer Techinician | Cahaya Computer</summary>
+        <summary>Computer Technician | Cahaya Computer</summary>
         <h3>2023 - 2024</h3>
         <ul>
           <li>Successfully repaired, upgraded and maintained PCs and laptops</li>
