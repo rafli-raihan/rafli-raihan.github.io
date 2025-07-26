@@ -62,7 +62,6 @@
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
 }
 
@@ -74,6 +73,10 @@ main {
   align-items: center;
   justify-content: center;
   align-items: stretch;
+}
+
+.experience_content {
+  width: 100%;
 }
 
 @media screen and (min-width: 800px) {
