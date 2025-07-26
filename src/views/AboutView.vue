@@ -17,9 +17,9 @@
           passionate to push things to its limit (yes, even myself).
           <br />
           <br />
-          You can find me doing anything I can/love/must be doing every day. Whether it's
-          freelancing, programming, writing music, performing in a band, or just simply surfing the
-          web like everyone else.
+          You can find me doing anything I can/love/must do every day. Whether it's freelancing,
+          programming, writing music, performing in a band, or just simply surfing the web like
+          everyone else.
           <br />
         </p>
       </div>
