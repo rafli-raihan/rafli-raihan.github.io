@@ -11,13 +11,15 @@
       <div class="about_container">
         <h1>Hi! I'm Rafli,</h1>
         <p>
-          IT Student, Freelancer & Musician(sort of) born and raised in Jakarta, Indonesia. Whether
-          I'm immersed in my university life or exploring art and the latest of technology, I'm
-          always fueled by curiosity and always up to the challenges.
+          <b>Tech Enthusiast, Freelancer & Musician(sort of...)</b> born and raised in Jakarta,
+          Indonesia. Whether I'm immersed in my university life or exploring art and the latest of
+          technology, I'm always fueled by curiosity, always up to the challenges, and really
+          passionate to push things to its limit (yes, even myself).
           <br />
           <br />
-          When I'm not studying, you can find me doing side hustle and other stuff. Whether it's
-          freelancing, programming, writing music, or just simply surfing the web.
+          You can find me doing anything I can/love/must be doing every day. Whether it's
+          freelancing, programming, writing music, performing in a band, or just simply surfing the
+          web like everyone else.
           <br />
         </p>
       </div>
@@ -25,14 +27,14 @@
     <h2>Experiences</h2>
     <div class="experience_content">
       <details open>
-        <summary>Computer Repair Techinician | Cahaya Computer</summary>
+        <summary>Computer Techinician | Cahaya Computer</summary>
         <h3>2023 - 2024</h3>
         <ul>
-          <li>Repaired, upgraded and maintained personal computer (pc) and laptop devices</li>
-          <li>Successfully built custom personal computers (pc) for offices and gaming purposes</li>
+          <li>Successfully repaired, upgraded and maintained PCs and laptops</li>
+          <li>Successfully built PCs for office and gaming purposes</li>
           <li>
-            Successfully deployed OSes (e.g. Windows & Linux), installed softwares and drivers on
-            personal computer (pc) and laptop devices
+            Successfully deployed Operating Systems (e.g. Windows & Linux), installed softwares and
+            drivers on PCs and laptops
           </li>
         </ul>
       </details>

@@ -7,7 +7,10 @@ const route = useRoute()
 <template>
   <div>
     <h1>Rafli Raihan's</h1>
-    <p v-show="route.path == '/'">hello, welcome to my page</p>
+    <p v-show="route.path == '/'">
+      <b>Hi, how are you?</b> <br />
+      Welcome to my page..
+    </p>
   </div>
   <div>
     <RouterLink v-show="route.path !== '/'" to="/" class="nav-btn">Home</RouterLink>
