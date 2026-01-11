@@ -11,14 +11,11 @@
       <div class="about_container">
         <h1>Hi! I'm Rafli,</h1>
         <p>
-          <b>Tech Enthusiast, Freelancer & Musician(sort of...)</b> born and raised in Jakarta,
-          Indonesia. Whether I'm immersed in my university life or exploring art and the latest of
-          technology, I'm always fueled by curiosity, always up to the challenges, and really
-          passionate to push things to its limit (yes, even myself).
+          <b>Tech Enthusiast, Freelancer & Musician(sort of...) who lives in Jakarta,
+          Indonesia.</b>
           <br />
-          <br />
-          You can find me doing anything I can/love/must do every day. Whether it's freelancing,
-          programming, writing music, performing in a band, or just simply surfing the web like
+          You can find me doing anything I can/love to/must do every day. Whether it's freelancing,
+          programming, repairing phones & laptops, writing music and performing in a band, or just simply surfing the web like
           everyone else.
           <br />
         </p>
