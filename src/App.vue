@@ -6,16 +6,16 @@ const route = useRoute()
 </script>
 
 <template>
-  <header v-show="route.path !== '/'">
+  <header>
     <Navbar />
   </header>
 
-  <main :class="{ 'home-background': route.path == '/' }">
+  <main>
     <RouterView />
   </main>
 
-  <footer v-show="route.path !== '/'">
-    <nav>
+  <footer>
+    <nav v-show="route.path !== '/' && route.path !== '/contact'">
       <a href="https://www.facebook.com/fli.raihan/">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
           <path
@@ -54,25 +54,25 @@ const route = useRoute()
         </svg>
       </a>
     </nav>
-    <p>Rafli Raihan | 2025</p>
+    <p>&copy; 2026 Rafli Raihan | All Rights Reserved.</p>
   </footer>
 </template>
 
 <style>
 header {
   position: static;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-between;
   height: min-content;
 }
 
-main {
+/* main {
   max-width: 1200px;
   min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 footer {
   position: relative;
@@ -80,7 +80,6 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  background-color: var(--color-background-mute);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.1);
@@ -100,34 +99,19 @@ footer > p {
   font-size: small;
 }
 
-@media (min-width: 700px) {
-  .home-background {
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-  }
-  .home-background::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background-image: url('/img/home_bg.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    transition: filter 0.3s;
-  }
+footer > nav a {
+  color: var(--btn-primary-bg);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
 
+footer > nav a:hover {
+  color: var(--btn-primary-hover-bg);
+}
+
+@media (min-width: 700px) {
   footer {
     margin: 50px auto 0 auto;
     width: 50%;
-  }
-
-  @media (prefers-color-scheme: light) {
-    .home-background::before {
-      filter: invert(1);
-    }
   }
 }
 </style>

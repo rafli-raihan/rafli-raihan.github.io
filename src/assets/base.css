@@ -1,102 +1,233 @@
-/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 1. CSS Variables (:root) - Light Mode (Default) */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+  /* Base Background & Text */
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --text-paragraph: #404040;
+  --text-muted: #7b7b7b;
+  --text-footer: #4b5563;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  /* Navigation */
+  --nav-link-color: #6a6a6b;
+  --nav-link-active: #000000;
 
-  --vt-c-indigo: #2c3e50;
+  /* Wireframe Scheme / Placeholder */
+  --bg-placeholder: #f3f4f6;
+  --border-placeholder: #dedede;
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  /* Warna Button Primary */
+  --btn-primary-bg: #FF5757;
+  --btn-primary-text: #ffffff;
+  --btn-primary-border: #ff9494;
+  --btn-primary-hover-bg: #ff9494;
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  /* Warna Button Secondary */
+  --btn-secondary-text: #757575;
+  --btn-secondary-border: #656565;
+  --btn-secondary-hover-text: #ffffff;
+  --btn-secondary-hover-border: #9ca3af;
 }
 
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
-}
-
+/* 2. Dark Mode Variables */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+    /* Base Background & Text */
+    --color-background: #121212;
+    --color-text: #f3f4f6;
+    --text-paragraph: #d1d5db;
+    --text-muted: #9ca3af;
+    --text-footer: #9ca3af;
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
+    /* Navigation */
+    --nav-link-color: #9ca3af;
+    --nav-link-active: #ffffff;
 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
+    /* Wireframe Scheme / Placeholder */
+    --bg-placeholder: #1f2937;
+    --border-placeholder: #374151;
+
+    /* Warna Button Primary (Tetap menonjol di dark mode) */
+    --btn-primary-bg: #FF5757;
+    --btn-primary-text: #ffffff;
+    --btn-primary-border: #ff7a7a;
+    --btn-primary-hover-bg: #ff7a7a;
+
+    /* Warna Button Secondary */
+    --btn-secondary-text: #d1d5db;
+    --btn-secondary-border: #6b7280;
+    --btn-secondary-hover-text: #121212;
+    --btn-secondary-hover-border: #9ca3af;
   }
 }
 
-/* pt-sans-latin-400-normal */
-/* work-sans-latin-wght-normal */
-@font-face {
-  font-family: 'Work Sans Variable';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 100 900;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/work-sans:vf@latest/latin-wght-normal.woff2)
-    format('woff2-variations');
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
-    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* work-sans-latin-ext-wght-normal */
-@font-face {
-  font-family: 'Work Sans Variable';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 100 900;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/work-sans:vf@latest/latin-ext-wght-normal.woff2)
-    format('woff2-variations');
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
-    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
-    U+A720-A7FF;
-}
-
+/* 3. Reset & Element Selectors */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
 }
 
 body {
   min-height: 100vh;
+  font-family: 'Fira Sans', 'Arial', sans-serif;
+  background-color: var(--color-background);
   color: var(--color-text);
-  background: var(--color-background);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
-  font-family: 'Work Sans Variable', 'Fira Sans', sans-serif;
-  font-size: 15px;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-footer);
+  font-size: 14px;
+}
+
+/* 4. Class Selectors */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.logo span {
+  font-size: 20px;
+  color: var(--text-muted);
+}
+
+.nav-links a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: var(--nav-link-active);
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+/* BUTTON STYLES */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    border-color 0.3s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: 1px solid var(--btn-primary-border);
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-primary-hover-bg);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--btn-secondary-text);
+  border: 1px solid var(--btn-secondary-border);
+}
+
+.btn-secondary:hover {
+  color: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+}
+
+.btn-secondary-alt {
+  background-color: transparent;
+  color: var(--btn-secondary-hover-text);
+  border: 1px solid var(--btn-secondary-hover-text);
+}
+
+.btn-secondary-alt:hover {
+  color: var(--btn-secondary-hover-border);
+  border-color: var(--btn-secondary-hover-border);
+}
+
+.btn-disabled {
+  background-color: var(--btn-secondary-hover-border);
+  color: var(--btn-primary-text);
+  pointer-events: none;
+}
+
+/* Elemen Kotak Placeholder */
+.placeholder-box {
+  background-color: var(--bg-placeholder);
+  color: var(--color-text);
+  border: 1px solid var(--border-placeholder);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  padding: 20px;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Helper Class untuk Layout Konten Halaman */
+.container {
+  max-width: 70vw;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 90vw;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
 }

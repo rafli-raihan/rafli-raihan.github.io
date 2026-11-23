@@ -1,0 +1,242 @@
+<script setup lang="ts"></script>
+<!-- Ntar ini juga fullstackin buat isinya :) -->
+
+<template>
+    <div class="container">
+        <!-- Bagian 1: Projects (Menggunakan elemen Table agar lulus kriteria materi) -->
+        <h2>My Projects</h2>
+        <p class="subtitle">Things I've done...</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th class="thumb-col">Thumbnail</th>
+                    <th>Projects</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="thumb-col">
+                        <div 
+                            class="table-thumb"
+                            style="background-image: url('/img/thumbnails/aicr.png');"
+                        ></div>
+                    </td>
+                    <td>
+                        <div class="proj-title">Arcade Ice Cream: Rush!</div>
+                        <div class="proj-desc">
+                            <p>
+                                RJK Production's first game...
+                            </p>
+                            <div class="proj-links">
+                                <a href="" class="btn btn-disabled" aria-disabled="true"> COMING SOON!</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="thumb-col">
+                        <div 
+                            class="table-thumb"
+                            style="background-image: url('/img/thumbnails/lav_tumbnail.jpeg');"
+                        ></div>
+                    </td>
+                    <td>
+                        <div class="proj-title">Lavender (Single)</div>
+                        <div class="proj-desc">
+                            <p>
+                                The debut single of my band amongthehow, written and arranged by me.
+                                I also directed the music video.
+                            </p>
+                            <div class="proj-links">
+                                <a href="https://tr.ee/WAT50x3nzX" target="_blank" class="btn btn-primary">Stream Links</a>
+                                <a href="https://www.youtube.com/watch?v=2s-vZTe5yqg" target="_blank" class="btn btn-secondary">Music Video</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+               
+            </tbody>
+        </table>
+
+        <!-- Bagian 2: Unsplash Pictures Grid -->
+        <h2>Unsplash Pictures</h2>
+        <p class="subtitle">Taken by yours truly....</p>
+        
+        <div class="grid-container" style="justify-content: center;">
+            <a  class="grid-item"
+                href="https://unsplash.com/photos/a-view-of-a-city-with-tall-buildings-ylgA4NKVyDM"
+                target="_blank"  
+                style="background-image: url('https://images.unsplash.com/photo-1679239108020-aca50acd5f00?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </a>
+            <a  class="grid-item"
+                href="https://unsplash.com/photos/a-group-of-colorful-fish-swimming-in-a-pond-tEyGDyHDPHs"
+                target="_blank"  
+                style="background-image: url('https://images.unsplash.com/photo-1670760864052-9bbd7c9ba7ec?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </a>
+            <a  class="grid-item"
+                href="https://unsplash.com/photos/a-green-and-white-clock-hanging-from-the-ceiling-I8X4lsiWEII"
+                target="_blank"  
+                style="
+                    background-image: url('https://images.unsplash.com/photo-1670756721402-fff5171d5f27?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                    background-position: center;">
+            </a>
+            <a  class="grid-item"
+                href="https://unsplash.com/photos/a-train-station-with-a-train-on-the-tracks-bjzJzZu2XPE"
+                target="_blank"  
+                style="
+                    background-image: url('https://images.unsplash.com/photo-1670758208517-e37570ddcf63?q=80&w=582&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                    background-position: center;">
+            </a>
+           <a  class="grid-item"
+                href="https://unsplash.com/photos/7P9y2GlEA9c"
+                target="_blank"  
+                style="
+                    background-image: url('https://images.unsplash.com/photo-1672066741834-e63348646107?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                    background-position: center;">
+            </a>
+            <a  class="grid-item"
+                href="https://unsplash.com/photos/1BFoUMvg8M8"
+                target="_blank"  
+                style="background-image: url('https://images.unsplash.com/photo-1670847657305-bf3dd57fcc0c?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            </a>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    
+    text-align: center;
+}
+.subtitle {
+    color: #b2b2b2;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* TABLE BUAT PROJECT */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 60px;         
+    max-width: 80%;      
+    margin: 0 auto 0 auto;   
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.thumb-col {
+    width: 30%;
+}
+
+.table-thumb {
+    width: 100%;
+    max-height: 180px;
+    aspect-ratio: 16/9;
+    background-color: #4b4b4b;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.proj-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.proj-desc {
+    /* color: #9ca3af; */
+    font-size: 14px;
+}
+
+.proj-links {
+    display: flex;
+    gap: 7px;
+}
+
+.proj-links a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LAYOUT GRID UNTUK UNSPLASH PICTURES */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;          
+    max-width: 80%;      
+    margin: 0 auto 0 auto;   
+}
+
+.grid-item {
+    background-color: #8b8b8b;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 350px;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.1s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.grid-container a:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.grid-container a:active{
+    transform: scale(0.98); 
+}
+
+@media screen and (max-width: 1200px){
+    th, td{
+        width: 50%;
+    }
+    .thumb-col {
+        width: 50%;
+    }
+    .proj-links {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;                
+        margin: 0 auto 0 auto;   
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+</style>

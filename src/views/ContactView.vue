@@ -1,0 +1,272 @@
+<script setup lang="ts"></script> 
+
+<template>
+    <div class="container">
+        <!-- Kolom Kiri: Informasi Sosial Media Sesuai Teks Desain -->
+        <div class="contact-info">
+            <h2>Let's connect!</h2>
+            <p>Feel free to get in touch if you'd like to collaborate or just say hello!</p>
+            <table>
+                <tr>
+                    <!-- IG -->
+                    <td>
+                        <a href="https://www.instagram.com/rafli_r4ihan/" target="_blank" rel="noopener noreferrer">
+                            <button id="sosmed-btn" style="background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                	<g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                		<path stroke-dasharray="66" d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z">
+                                			<animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="66;0" />
+                                		</path>
+                                		<path stroke-dasharray="28" stroke-dashoffset="28" d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4">
+                                			<animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.6s" to="0" />
+                                		</path>
+                                	</g>
+                                	<circle cx="17" cy="7" r="1.5" fill="#fff" opacity="0">
+                                		<animate fill="freeze" attributeName="opacity" begin="1.3s" dur="0.2s" to="1" />
+                                	</circle>
+                                </svg>
+                                <span>&nbsp;@rafli_r4ihan</span>
+                            </button>
+                        </a>
+                    </td>
+                    <!-- FB -->
+                    <td> 
+                        <a href="https://www.facebook.com/fli.raihan" target="_blank" rel="noopener noreferrer">
+                            <button id="sosmed-btn" style="background-color: #1800ad;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                		<path stroke-dasharray="24" d="M17 4l-2 0c-2.5 0 -4 1.5 -4 4v12">
+                                			<animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="24;0" />
+                                		</path>
+                                		<path stroke-dasharray="10" stroke-dashoffset="10" d="M8 12h7">
+                                			<animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" to="0" />
+                                		</path>
+                                	</g>
+                                </svg>
+                                <span>&nbsp;Rafli Raihan</span>
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Linkedin -->
+                    <td>
+                        <a href="https://www.linkedin.com/in/muhammad-rafli-raihan-6336a4294/" target="_blank" rel="noopener noreferrer">
+                            <button id="sosmed-btn" style="background-color: #1785eb;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                	<circle cx="4" cy="4" r="2" fill="currentColor" opacity="0">
+                                		<animate fill="freeze" attributeName="opacity" dur="0.2s" to="1" />
+                                	</circle>
+                                	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                		<g stroke-dasharray="12" stroke-dashoffset="12">
+                                			<path d="M4 10v10">
+                                				<animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" to="0" />
+                                			</path>
+                                			<path d="M10 10v10">
+                                				<animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" to="0" />
+                                			</path>
+                                		</g>
+                                		<path stroke-dasharray="24" stroke-dashoffset="24" d="M10 15c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5v5">
+                                			<animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.3s" to="0" />
+                                		</path>
+                                	</g>
+                                </svg>
+                                <span>&nbsp;Rafli Raihan</span>
+                            </button>
+                        </a>
+                    </td>
+                    <!-- Github -->
+                    <td> 
+                        <a href="https://github.com/rafli-raihan/" target="_blank" rel="noopener noreferrer">
+                            <button id="sosmed-btn" style="background-color: black;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                		<path stroke-dasharray="32" d="M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3">
+                                			<animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="32;0" />
+                                		</path>
+                                		<path stroke-dasharray="10" stroke-dashoffset="10" d="M9 19c-1.41 0 -2.84 -0.56 -3.69 -1.19c-0.84 -0.63 -1.09 -1.66 -2.31 -2.31">
+                                			<animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" to="0" />
+                                		</path>
+                                	</g>
+                                </svg>
+                                <span>&nbsp;rafli-raihan</span>
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Email -->
+                    <td colspan="2"> 
+                        <a href="mailto:raihanrafli81@proton.me" target="_blank" rel="noopener noreferrer">
+                            <button id="sosmed-btn" style="color: #9e00ff; border: 1px solid #9e00ff; background-color: rgba(255, 255, 255, 0);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                	<path fill="#9e00ff" fill-opacity="0" d="M12 11l-8 -5h16l-8 5Z">
+                                		<animate fill="freeze" attributeName="fill-opacity" begin="0.9s" dur="0.4s" to="1" />
+                                	</path>
+                                	<g fill="none" stroke="#9e00ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                		<path stroke-dasharray="66" d="M4 5h16c0.55 0 1 0.45 1 1v12c0 0.55 -0.45 1 -1 1h-16c-0.55 0 -1 -0.45 -1 -1v-12c0 -0.55 0.45 -1 1 -1Z">
+                                			<animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="66;0" />
+                                		</path>
+                                		<path stroke-dasharray="24" stroke-dashoffset="24" d="M3 6.5l9 5.5l9 -5.5">
+                                			<animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.3s" to="0" />
+                                		</path>
+                                	</g>
+                                </svg>
+
+                                <span>the good old email...</span>
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- buat full stack ini -->
+        <!-- <div class="form-col">
+            <form id="contactForm" onsubmit="return validateForm(event)">
+                <h3>Send a Message (Anonymously)</h3>
+                <div class="form-group">
+                    <label for="txtNama">Name (optional)</label>
+                    <input type="text" id="txtNama" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="txtPesan">Message</label>
+                    <textarea id="txtPesan" rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Submit Message</button>
+            </form>
+        </div> -->
+    </div>
+</template>
+
+<style scoped>
+.container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #adadad;
+    margin-bottom: 30px;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+}
+
+.social-list li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.social-list a {
+    color: var(--btn-primary-bg);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-list a:hover {
+    text-decoration: underline;
+}
+
+
+/* WAJIB: STYLING FORM KONTAK */
+form {
+    width: 100%;
+    color: #ffffff;
+    background-image: url('assets/hero_bg.png');
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #c8c8c9;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    border-color: var(--btn-primary-border);
+}
+
+#submit-btn {
+    width: 100%;
+}
+
+table {
+    min-width: 100%;
+}
+
+td{
+    padding: 3px;
+}
+
+#sosmed-btn {
+    color: white;
+    padding: 5px;
+    min-width: 100%;
+    height: 64px;
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 14px;
+    transition: transform 0.1s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+#sosmed-btn:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#sosmed-btn:active {
+    transform: scale(0.98); 
+}
+
+a {
+    text-decoration: none;
+}
+
+a span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:800px){
+    .container{
+        flex-direction: column;
+            justify-content: center;
+        }
+    form {
+        width: auto;
+    }
+}
+</style>

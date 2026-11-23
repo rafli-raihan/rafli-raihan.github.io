@@ -1,149 +1,138 @@
-<script setup lang="ts"></script>
+<script setup lang="ts"></script> 
+<!-- once again ini nanti buat klo fullstack experiences nya gak pake statis lg makanya ada script -->
 
 <template>
-  <main>
-    <div class="summary">
-      <img
-        src="https://avatars.githubusercontent.com/u/115336466?v=4"
-        alt="Profile Picture"
-        class="profile_pic"
-      />
-      <div class="about_container">
-        <h1>Hi! I'm Rafli,</h1>
-        <p>
-          <b>Tech Enthusiast, Freelancer & Musician(sort of...) who lives in Jakarta,
-          Indonesia.</b>
-          <br />
-          You can find me doing anything I can/love to/must do every day. Whether it's freelancing,
-          programming, repairing phones & laptops, writing music and performing in a band, or just simply surfing the web like
-          everyone else.
-          <br />
-        </p>
-      </div>
-    </div>
-    <h2>Experiences</h2>
-    <div class="experience_content">
-      <details open>
-        <summary>Computer Technician | Cahaya Computer</summary>
-        <h3>2023 - 2024</h3>
-        <ul>
-          <li>Successfully repaired, upgraded and maintained PCs and laptops</li>
-          <li>Successfully built PCs for office and gaming purposes</li>
-          <li>
-            Successfully deployed Operating Systems (e.g. Windows & Linux), installed softwares and
-            drivers on PCs and laptops
-          </li>
-        </ul>
-      </details>
+   <div class="container">
+        <div class="profile-header">
+            <!-- Representasi Foto dari Mockup Desain -->
+            <div class="profile-img-placeholder"></div>
+            <div class="profile-intro">
+                <h2>Hi! I'm Rafli</h2>
+                <div class="tagline">Tech Enthusiast, Developer, Freelancer & Musician <br /> based on Jakarta, Indonesia.</div>
+                <hr>
+                <p class="bio">
+                    I'm just a chill guy whose days are packed with a random mix of things I love to do and things I absolutely must do. These range from coding websites and video games to repairing dying laptops and smartphones, writing songs and performing it with my band. When I just want to unwind, I'm simply surfing the web like everyone else.
+                </p>
+                <RouterLink to="/contact" active-class="active" class="btn btn-primary">Contact Me!</RouterLink>
+            </div>
+        </div>
 
-      <hr />
-      <details open>
-        <summary>High School Student | SMA Negeri 82 Jakarta</summary>
-        <h3>2019 - 2022</h3>
-        <ul>
-          <li>
-            Participated in Teenage Scientific Works (Karya Ilmiah Remaja) in electronics division
-          </li>
-          <li>
-            Wrote scientific papers in Microsoft Word, designed presentations in Microsoft
-            Powerpoint and presented it
-          </li>
-          <li>Participated in music extraculicular</li>
-        </ul>
-      </details>
-    </div>
-  </main>
+        <!-- Bagian Pengalaman Sesuai Teks Mockup -->
+        <h2>Experiences</h2>
+        <section id="experience-section">
+            <div class="exp-title">Computer Technician</div>
+            <div class="exp-company">Cahaya Computer | 2023 - 2024</div>
+            <ul>
+                <li>Successfully repaired, upgraded and maintained PCs and laptops</li>
+                <li>Successfully built PCs for office and gaming purposes</li>
+                <li>Successfully deployed Operating Systems (e.g. Windows & Linux), installed softwares and drivers on PCs and laptops</li>
+            </ul>
+        </section>
+      </div>
 </template>
 
 <style scoped>
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.summary {
-  margin: 0 auto;
-  padding-bottom: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.experience_content {
-  width: 100%;
-}
-
-@media screen and (min-width: 800px) {
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2%;
-  }
-
-  .summary {
+.profile-header {
     display: flex;
-    flex-direction: row;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 50px;
+}
+
+.profile-img-placeholder {
+    width: 30vw;
+    height: 80vh;
+    background-image: url('/img/about_pic.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: stretch;
-    max-width: 1200px;
-  }
+    flex-shrink: 0;
 }
 
-.profile_pic {
-  display: flex;
-  box-shadow: 0 0 10px rgba(26, 25, 25, 0.699);
-  justify-content: center;
-  align-self: center;
-  margin: 2% auto auto auto;
-  border-radius: 25%;
-  transition: 500ms;
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  object-fit: contain;
+.profile-intro h2 {
+    font-size: 9vh;
+    margin-bottom: 5px;
 }
 
-.profile_pic:hover {
-  transform: scale(1.03);
+.tagline {
+    font-size: 3vh;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
-.about_container {
-  display: block;
-  place-items: center;
-  padding: 2%;
+.bio {
+    font-size: 2.5vh;
+    text-align: justify;
+    margin-bottom: 20px;
 }
 
-.about_container > h2 {
-  font-weight: bold;
+#experience-section {
+    background-color: var(--bg-placeholder);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    margin-top: 40px;
 }
 
-.about_container > p {
-  text-justify: distribute;
+.exp-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-@media screen and (min-width: 800px) {
-  .summary {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch; /* Make children (img and about_container) the same height */
-    max-width: 1200px;
-  }
+.exp-company {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
 
-  .profile_pic {
-    max-height: 100%;
-    max-width: 300px; /* Optional: limit width on large screens */
-  }
+ul {
+    padding-left: 20px;
+}
 
-  .about_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start; /* Align text to the left */
-  }
+li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:1427px) {
+    .tagline br {
+        display: none;
+    }
+
+    .profile-intro h2 {
+        font-size: 7vh;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-header{
+        flex-direction: column;
+    }
+
+    .profile-img-placeholder{
+        width: 90vw;
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .profile-intro h2 {
+        font-size: 5vh;
+        margin-bottom: 5px;
+    }
+
+    .tagline {
+        font-size: 2vh;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .bio {
+        font-size: 1.5vh;
+        text-align: justify;
+    }
 }
 </style>
