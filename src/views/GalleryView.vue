@@ -19,7 +19,7 @@
                     <td class="thumb-col">
                         <div 
                             class="table-thumb"
-                            style="background-image: url('/img/thumbnails/aicr.png');"
+                            style="background-image: url('img/thumbnails/aicr.png');"
                         ></div>
                     </td>
                     <td>
@@ -38,7 +38,7 @@
                     <td class="thumb-col">
                         <div 
                             class="table-thumb"
-                            style="background-image: url('/img/thumbnails/lav_tumbnail.jpeg');"
+                            style="background-image: url('img/thumbnails/lav_tumbnail.jpeg');"
                         ></div>
                     </td>
                     <td>
